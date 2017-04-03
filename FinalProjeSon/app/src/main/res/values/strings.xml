@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalProjeSon</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_giris">GirisActivity</string>
+    <string name="title_activity_uye">UyeActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_egim">EgimActivity</string>
+    <string name="title_activity_heyelan_risk">HeyelanRisk</string>
+    <string name="title_activity_secenek">SecenekActivity</string>
+    <string name="title_activity_profil">ProfilActivity</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_profil"
+    tools:context="com.example.mmert.finalprojeson.ProfilActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADI :"
+        android:id="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SOYADI "
+        android:id="@+id/textView16"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="KULLANICI ADI"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ŞİFRE :"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E-MAIL:"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_adi"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_soyadi"
+        android:layout_below="@+id/edt_adi"
+        android:layout_alignLeft="@+id/edt_adi"
+        android:layout_alignStart="@+id/edt_adi"
+        android:layout_alignRight="@+id/edt_adi"
+        android:layout_alignEnd="@+id/edt_adi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_kulladi"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_alignRight="@+id/edt_soyadi"
+        android:layout_alignEnd="@+id/edt_soyadi"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_sifre"
+        android:layout_below="@+id/edt_kulladi"
+        android:layout_alignLeft="@+id/edt_soyadi"
+        android:layout_alignStart="@+id/edt_soyadi"
+        android:layout_alignRight="@+id/edt_kulladi"
+        android:layout_alignEnd="@+id/edt_kulladi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/edt_sifre"
+        android:layout_alignLeft="@+id/edt_sifre"
+        android:layout_alignStart="@+id/edt_sifre"
+        android:layout_alignRight="@+id/edt_sifre"
+        android:layout_alignEnd="@+id/edt_sifre"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

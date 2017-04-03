@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_egim"
+    tools:context="com.example.mmert.finalprojeson.EgimActivity"
+    android:background="#cccccc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Eğim Hesaplamak İçin Aşağıdaki Değerleri Girin "
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#bc2727" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yükseklik Farkı (m) :"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yatay Uzaklık (m) :"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12"
+        android:id="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edt_yukseklik"
+        android:layout_above="@+id/textView13"
+        android:layout_marginLeft="200dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edt_yatay"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:id="@+id/btn_egimHesapla"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sonuç :"
+        android:id="@+id/txt_sonuc"
+        android:layout_below="@+id/btn_egimHesapla"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_marginTop="20dp"
+        android:textColor="#bc2727" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_sonuc"
+        android:layout_alignTop="@+id/txt_sonuc"
+        android:layout_alignLeft="@+id/edt_yukseklik"
+        android:layout_alignStart="@+id/edt_yukseklik" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heyelan Riskini Göster"
+        android:id="@+id/btn_heyelan"
+        android:layout_below="@+id/txt_sonuc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>
